@@ -8,7 +8,7 @@ export const initiatePaymentHandler = async (req: Request, res: Response) => {
         const payment = await createPayment(amount);
         res.status(200).json(payment);
     } catch (error) {
-        res.status(500).json({ error: error?.message });
+        res.status(500).json({ error: (error as Error)?.message });
     }
 };
 
@@ -24,6 +24,6 @@ export const manualPaymentVerificationHandler = async (req: Request, res: Respon
 
         res.status(200).json({ message: 'Payment status updated', payment });
     } catch (error) {
-        res.status(500).json({ error: error?.message });
+        res.status(500).json({ error: (error as Error)?.message });
     }
 };
