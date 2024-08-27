@@ -11,7 +11,7 @@ AmarPay provides REST APIs for payment processing. Use the Sandbox environment f
 - **Sandbox API Endpoint**: `https://sandbox.aamarpay.com/jsonpost.php`
 - **Live API Endpoint**: Provided by AmarPay upon going live.
 
-### Testing Environment
+### Testing Environment (Sandbox Environment)
 
 For testing, use:
 - **Store ID**: `aamarpaytest`
